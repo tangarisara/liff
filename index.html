@@ -44,6 +44,18 @@
 
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script> -->
   <script>
+    function createUniversalLink() {
+    }
+
+    async function shareMsg() {
+      await liff.shareTargetPicker([
+   {
+     "type": "text",
+     "text": "this massage was sent by ShareTargetPicker"
+   }
+      ])
+    }
+
     function logOut() {
       liff.logOut()
       window.location.reload()
